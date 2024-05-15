@@ -1,0 +1,19 @@
+class Funcionario {
+  - nome: String
+  - valorHora: double
+  - horasTrabalhadas: int
+  + calcularSalario(): double
+}
+
+class Lider {
+  - BONUS: double
+  + calcularSalario(): double
+}
+
+class Gerente {
+  - BONUS: double
+  + calcularSalario(): double
+}
+
+Funcionario <|-- Lider
+Funcionario <|-- Gerente
